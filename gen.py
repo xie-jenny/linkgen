@@ -1,42 +1,33 @@
+import itertools
 import string
 
-#casing = input('enter number of letters: ')
 
-#print(casing)
-
-alphabet1 = ['s','S'] 
-alphabet2 = ['d','e','f','D','E','F']
-alphabet3 = ['r','R']
-alphabet4 = ['v','w','x','y','z','V','W','X','Y','Z']
-alphabet5 = ['j','k','l','J','K','L']
-alphabet6 = ['j','k','l','J','K','L']
-alphabet7 = ['r','R']
+noalpha = input('how many alphabets? ')
 
 
-string=''
-file = open("LIST.txt","w")
-for x in alphabet1:
-    for y in alphabet2:
-        for z in alphabet3:
-             for a in alphabet4:
-                  for b in alphabet5:
-                       for c in alphabet6:
-                           for d in alphabet7:
-                                string+=x
-                                string+=y
-                                string+=z
-                                string+=a
-                                string+=b
-                                string+=c
-                                string+=d
-                                string+='\n'
+print(noalpha)
 
-file.write(string+'\n')
-string=''
+for i in range (0,int(noalpha)):
+   input_string = input("Enter a list element separated by space: ")
+
+   a = []
+   a = input_string.split(' ')
+
+
+
+b = ['1','2','3']
+c = ['A','B','C']
+
+
+alphabets = [a,b,c]
+
+
+file = open("LIST2.txt",'w')
+for n in itertools.product(*alphabets):
+   file.write(''.join(n))
+   file.write('\n')
+
+
 file.close()
-print ('DONE!')
-
-
-
-
+print('done.')
 
