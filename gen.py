@@ -10,15 +10,8 @@ print(noalpha)
 alphabets = []
 
 for i in range (0,int(noalpha)):
-   input_string = input("Enter list elements of the {}th alphabet separated by spaces: ".format(i))
-   #collection[i] = []
+   input_string = input("Enter list elements of the {}th alphabet separated by spaces: ".format(i+1))
    alphabets.append(input_string.split(' '))
-
-
-# test data
-b = ['1','2','3']
-c = ['A','B','C']
-
 
 
 
