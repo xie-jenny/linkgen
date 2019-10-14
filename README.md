@@ -1,2 +1,2 @@
 # linkgen
-a small tool that creates wordlists to checking casing or incomplete urls
+a small tool that creates wordlists to bruteforce url casing variations or incomplete urls
