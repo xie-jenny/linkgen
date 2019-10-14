@@ -7,22 +7,22 @@ noalpha = input('how many alphabets? ')
 
 print(noalpha)
 
+alphabets = []
+
 for i in range (0,int(noalpha)):
-   input_string = input("Enter a list element separated by space: ")
-
-   a = []
-   a = input_string.split(' ')
-
+   input_string = input("Enter list elements of the {}th alphabet separated by spaces: ".format(i))
+   #collection[i] = []
+   alphabets.append(input_string.split(' '))
 
 
+# test data
 b = ['1','2','3']
 c = ['A','B','C']
 
 
-alphabets = [a,b,c]
 
 
-file = open("LIST2.txt",'w')
+file = open("LIST.txt",'w')
 for n in itertools.product(*alphabets):
    file.write(''.join(n))
    file.write('\n')
