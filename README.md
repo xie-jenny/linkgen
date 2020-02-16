@@ -1,5 +1,5 @@
 # Linkgen
-A small tool that creates wordlists to bruteforce url casing variations or incomplete urls
+A small script that creates wordlists to bruteforce url casing variations or incomplete urls
 
 
 ## Usage:
